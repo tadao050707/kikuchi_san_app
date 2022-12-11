@@ -26,6 +26,7 @@
         <td><%= form.file_field :picture %></td>
         <td><%= form.file_field :movie, :accept => 'movie/*' %></td>
         <%= form.hidden_field :task_id, :value => @cause.task_id %>
+        <%= form.hidden_field :add_new_cause, :value => @test %>
       </tr>
   </tbody>
 </table>
